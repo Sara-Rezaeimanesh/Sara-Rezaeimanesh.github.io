@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SURPRISE!</title>
+    <title>دعوتنامه</title>
     <style>
         body {
             margin: 0;
@@ -40,6 +40,10 @@
             line-height: 1.6;
         }
 
+        h3 {
+            cursor: pointer;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -59,8 +63,26 @@
         a {
             color: white;
         }
-        h3 {
-            cursor: pointer;
+        /* Styles for tablets (768px to 1024px) */
+        @media (max-width: 1024px) {
+            html {
+                padding-top: 5em;
+                padding-bottom: 5em;
+            }
+            body {
+                /* margin-top: 8vh;
+                margin-bottom: 5vh; */
+                flex-direction: column-reverse;
+            }
+            .card {
+                background: #2a1048;
+                border-radius: 20px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+                width: 80%;
+                padding: 20px;
+                text-align: center;
+                animation: fadeIn 1s ease-in-out;
+            }
         }
     </style>
 </head>
@@ -70,7 +92,7 @@
         <h1>شما به گودبای پارتی سارا دعوت شده اید!!!</h1>
         <h3 onclick="playMusic()">جهت شنیدن موسیقی فاخر کلیک کنید.</h3>
         <br/>
-        <p>زمان: پنج شنبه 29 آذر. از 11 به بعد هر ساعتی خواستید بیاید. از ساعت 4 به بعد راه نمیدیم.</p>
+        <p>زمان: پنج شنبه 29 آذر. از ساعت 11 به بعد هر  ساعتی خواستید بیاید. از ساعت 4 به بعد راه نمیدیم.</p>
         <p>مکان: ستاری جنوب، پیامبر غربی، بلوار مطهری، کوچه سوم غربی، پلاک 49، واحد 1</p>
         <p>هر کی نیاد خونش پا خودش :)</p>
         <a href="GBP_4.html">سوالات پرتکرار</a>
