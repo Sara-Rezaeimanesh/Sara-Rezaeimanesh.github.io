@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوتنامه</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #100f1b;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: row;
+            cursor: pointer;
+        }
+
+        .card {
+            background: #2a1048;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .card h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .card p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        img {
+            width: 100%; 
+            height: auto; 
+            max-width: 500px; 
+            border-radius: 10px; 
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+<img src="https://i.gifer.com/7Uz.gif" />
+<body >
+    <div class="card">
+        <h1>شما به گودبای پارتی سارا دعوت شده اید!!!</h1>
+        <h4 onclick="playMusic()">جهت شنیدن موسیقی فاخر کلیک کنید.</h4>
+        <br/>
+        <p>زمان: پنج شنبه 29 آذر. از ساعت 11 به بعد هر بیاید. از ساعت 4 به بعد راه نمیدیم.</p>
+        <p>مکان: ستاری جنوب، پیامبر غربی، بلوار مطهری، کوچه سوم غربی، پلاک 49، واحد 1</p>
+        <p>هر کی نیاد خونش پا خودش :)</p>
+        <a href="GBP_4.html">سوالات پرتکرار</a>
+    </div>
+    
+
+    <audio id="backgroundMusic" loop>
+        <source src="Jafar.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('backgroundMusic');
+            audio.play(); // Starts playing the audio on click
+            document.body.style.cursor = 'default'; // Reset cursor
+        }
+    </script>
+</body>
+</html>
